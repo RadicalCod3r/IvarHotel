@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#index-header {
+    width: 100%;
+    height: 100vh;
+    background: url('imgs/newyork.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.grey-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    opacity: .4;
+}
+
+#index-header * {
+    z-index: 10;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem;
+    height: 50px;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: .9rem;
+    font-family: 'Lato', sans-serif;
+    padding: .5rem 0;
+    margin: 0 1rem;
+}
+
+.nav-item:hover {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-lock {
+    padding: 5px;
+}
+
+.current {
+    border-bottom: solid #fff 1px;
+}
+
+.no-border:hover {
+    border-bottom: none;
+}
+
+.header-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.titre {
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 2rem 0;
+}
+
+.btn {
+    padding: .8rem 1rem;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bg-white {
+    background: #fff;
+    color: #333;
+}
+
+.btn-large {
+    font-size: .8rem;
+    font-weight: bold;    
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+.article-title {
+    width: 70%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.guide {
+    display: flex;
+    flex-direction: row;
+    font-size: .8rem;
+    color: #333;
+    margin: .5rem 0;
+}
+
+.info {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.city-gal {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 200px;
+    grid-gap: 5px;
+    width: 100%;
+}
+
+.grid-columns-2x {
+    grid-column: span 2;
+}
+
+.grid-rows-2x {
+    grid-row: span 2;
+}
+
+.city-gal > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.card-content {
+    width: 75%;
+    color: #333;
+    font-size: .8rem;
+}
+
+.btn-info {
+    font-size: .8rem;
+    padding: .5rem 0;
+}
+
+.room-gal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.room-image {
+    width: 33%;
+    object-fit: cover;
+    height: 400px;
+}
